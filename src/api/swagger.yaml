@@ -1,0 +1,41 @@
+swagger: "2.0"
+
+info:
+  title: API Documentation
+  description: API documentation for the project.
+  version: 1.0.0
+
+paths:
+  /api/v1/chat:
+    post:
+      tags: [Gemini Prompt]
+      summary: Chat with the model
+      description: Send a message to the model and receive a response.
+      operationId: postGeminiController
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: prompt
+          description: The message to send to the model.
+          required: true
+          schema:
+            $ref: "#/definitions/Comando"
+      responses:
+        200:
+          description: Ok
+        404:
+          description: Dados não encontrados
+        500:
+          description: Erro interno do Servidor
+      x-swagger-router-controller: Gemini.Controller
+
+definitions:
+  Comando:
+    type: object
+    properties:
+      prompt:
+        type: string
+        example: "Hello, how are you?"

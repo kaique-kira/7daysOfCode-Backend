@@ -1,0 +1,35 @@
+{
+  "name": "7daysofcode-backend",
+  "version": "1.0.0",
+  "description": "Desafio do 7DaysOfCode da Alura",
+  "license": "ISC",
+  "author": "Kaique Felipe",
+  "type": "commonjs",
+  "main": "index.ts",
+  "scripts": {
+    "test": "test",
+    "start": "node dist/index.js",
+    "dev": "nodemon --exec \"tsx\" src/index.ts"
+  },
+  "dependencies": {
+    "@google/genai": "^1.0.1",
+    "@google/generative-ai": "^0.24.1",
+    "7daysofcode-backend": "file:",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "js-yaml": "^4.1.0",
+    "nodemon": "^3.1.10",
+    "swagger-ui-express": "^5.0.1",
+    "tsx": "^4.19.4"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.18",
+    "@types/express": "^5.0.2",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.15.21",
+    "@types/swagger-ui-express": "^4.1.8",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  }
+}
