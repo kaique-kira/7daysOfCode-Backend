@@ -5,7 +5,7 @@
   "license": "ISC",
   "author": "Kaique Felipe",
   "type": "commonjs",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "scripts": {
     "test": "test",
     "start": "node dist/index.js",
@@ -14,12 +14,17 @@
   "dependencies": {
     "@google/genai": "^1.0.1",
     "@google/generative-ai": "^0.24.1",
+    "@typescript-eslint/eslint-plugin": "^8.31.0",
+    "@typescript-eslint/parser": "^8.31.0",
     "7daysofcode-backend": "file:",
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
+    "eslint": "^9.25.1",
+    "eslint-plugin-prettier": "^5.2.6",
     "express": "^5.1.0",
     "js-yaml": "^4.1.0",
     "nodemon": "^3.1.10",
+    "prettier": "^3.5.3",
     "swagger-ui-express": "^5.0.1",
     "tsx": "^4.19.4"
   },

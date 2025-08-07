@@ -1,0 +1,19 @@
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "printWidth": 80,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "arrowParens": "always",
+  "semi": true,
+  "endOfLine": "auto",
+  "overrides": [
+    {
+      "files": "*.yaml",
+      "options": {
+        "bracketSameLine": false,
+        "proseWrap": "always"
+      }
+    }
+  ]
+}
